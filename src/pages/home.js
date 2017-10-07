@@ -12,7 +12,7 @@ export default class HomePage extends Component {
             <h3>
               Front End Web Developer committed to helping you make an amazing
               experience for your users, and have an amazing one
-              yourself. <a href='#contact'>Contact Me</a>
+              yourself.
             </h3>
           </div>
           <span className='c-scrolldown'>Scroll Down &#8595;</span>
@@ -99,7 +99,7 @@ export default class HomePage extends Component {
       </div>
     )
   }
-  
+
   searchSite(event) {
     event.preventDefault()
 
