@@ -1,10 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
     <div className='c-header'>
-      <div className='c-header__logo'>
-        <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525031/GavynFullWhite_ezsood.svg'/>
+      <Link className='c-header__logo' to='/'>
+        <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525031/GavynFullWhite_ezsood.svg'/>
+      </Link>
+
+      <div className='c-header__nav'>
+        <Link to='/about'>
+          About Me
+        </Link>
       </div>
     </div>
   )

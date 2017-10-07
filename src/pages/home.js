@@ -19,8 +19,7 @@ export default class HomePage extends Component {
         <form
           method='POST'
           action='https://formspree.io/gavmanweb@gmail.com'
-          className='c-contact-form'
-          onSubmit={this.email.bind(this)}>
+          className='c-contact-form'>
           <input type='email' placeholder='enter email address' name='_replyto' />
           <textarea defaultValue='Contact Me!' name='message' />
           <button type='submit'>Send</button>
@@ -29,7 +28,7 @@ export default class HomePage extends Component {
     } else {
       emailer = (
         <div className='c-email-img-container'>
-          <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1490468248/hook-1727484_iqppwy.svg' />
+          <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490468248/hook-1727484_iqppwy.svg' />
           <h2>Message Recieved!</h2>
         </div>
       )
@@ -39,7 +38,7 @@ export default class HomePage extends Component {
       <div className='c-page'>
         <section className='c-hero'>
           <div className='c-hero__content-container'>
-            <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg'/>
+            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg'/>
             <h3>
               Front End Web Developer committed to helping you make an amazing
               experience for your users, and have an amazing one
@@ -54,10 +53,12 @@ export default class HomePage extends Component {
           <main className='o-section__main-content'>
             <h1 className='o-section__header'>Responsive Design</h1>
             <p>
-              In todays world <a href='http://tcrn.ch/2mHKS9Y' target='_blank'> 51.3% </a>
+              In todays world
+              <a href='http://tcrn.ch/2mHKS9Y' target='_blank' rel="noopener noreferrer"> 51.3% </a>
               of everyone that visits your website will do so on their phones.
               Lets make sure that when they visit yours, it's a great experience!
-              read <a href='http://bit.ly/2nW6j81' target='_blanck'> here </a>
+              read
+              <a href='http://bit.ly/2nW6j81' target='_blanck' without rel="noopener noreferrer">  here </a>
               to learn more.
             </p>
 
@@ -76,7 +77,7 @@ export default class HomePage extends Component {
 
           <aside className='o-section__aside-content o-section__aside-content--right-align'>
             <div className='c-phone-view'>
-              <iframe src={this.state.siteUrl}></iframe>
+              <iframe title='mobile-view' src={this.state.siteUrl}></iframe>
             </div>
           </aside>
         </section>
@@ -84,7 +85,7 @@ export default class HomePage extends Component {
         <section className='o-section o-section--homepage-bg'>
           <aside className='o-section__aside-content o-section__aside-content--vertical-center'>
             <div className='c-img-container c-img-container--hide-on-mobile'>
-              <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1490392405/responsive-2044932_1920_j3yiey.png' />
+              <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490392405/responsive-2044932_1920_j3yiey.png' />
             </div>
           </aside>
 
@@ -112,7 +113,7 @@ export default class HomePage extends Component {
             </p>
           </main>
 
-          <aside className='o-section__aside-content'>
+          <aside className='o-section__aside-content o-section__aside-content--lg'>
             {emailer}
           </aside>
         </section>

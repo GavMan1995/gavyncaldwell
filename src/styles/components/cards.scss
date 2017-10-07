@@ -1,0 +1,30 @@
+.c-card {
+  @include flex-item(400px, 1)
+  min-height: 380px;
+  margin: 8px;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: $cl-neutral-6;
+  border: 4px solid $cl-white;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: $cl-teal;
+  }
+
+  > h3 {
+    width: 100%;
+    padding-bottom: 8px;
+    color: $cl-white;
+  }
+
+  > img {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
+}
+
+.c-card-placeholder {
+  @include flex-item(400px, 1);
+}

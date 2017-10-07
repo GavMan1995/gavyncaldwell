@@ -1,0 +1,22 @@
+//=== Defaults ===\\
+@import 'styles/defaults/resets';
+
+//=== Tools ===\\
+@import 'styles/tools/animations';
+@import 'styles/tools/variables';
+@import 'styles/tools/mixins';
+@import 'styles/tools/typography';
+
+
+//=== Gloabal Components ===\\
+@import 'styles/components/buttons';
+@import 'styles/components/header';
+@import 'styles/components/image-container';
+@import 'styles/components/cards';
+
+//=== Base ===\\
+@import 'styles/base';
+
+//=== Pages ===\\
+@import 'styles/pages/homepage';
+@import 'styles/pages/about-me';

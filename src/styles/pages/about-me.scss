@@ -1,0 +1,26 @@
+.c-about-me-title {
+  width: 100%;
+}
+
+.c-about-me-links {
+  flex-basis: 100%;
+  @include flex-container(center, center);
+
+  > a {
+    margin: 8px;
+    margin-bottom: 0;
+    transition: color 0.3s;
+    font-size: 40px;
+
+    > span {
+      color: $cl-white;
+      transition: color 0.3s;
+    }
+
+    &:hover {
+      > span {
+        color: $cl-neutral-3;
+      }
+    }
+  }
+}
