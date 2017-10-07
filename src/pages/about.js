@@ -25,6 +25,13 @@ export default class AboutPage extends Component {
               rel="noopener noreferrer">
               <span className='fa fa-linkedin-square'/>
             </a>
+
+            <a
+              href='https://codepen.io/gavman1995/'
+              target='_blank'
+              rel="noopener noreferrer">
+              <span className='fa fa-codepen'/>
+            </a>
           </div>
         </section>
 

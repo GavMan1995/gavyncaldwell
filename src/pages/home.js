@@ -1,40 +1,8 @@
 import React , { Component } from 'react'
 
 export default class HomePage extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      siteUrl: 'http://hello',
-      emailSent: false
-    }
-  }
-
-
   render () {
-    let emailer = null
-
-    if (this.state.emailSent === false) {
-      emailer = (
-        <form
-          onSubmit={() => this.email.bind(this)}
-          className='c-contact-form'
-          action='https://formcarry.com/s/r1xlEfU3b'
-          method='POST'
-          accept-charset='UTF-8'>
-          <input type='email' placeholder='enter email address' name='email' />
-          <textarea defaultValue='Contact Me!' name='message' />
-          <button type='submit'>Send</button>
-        </form>
-      )
-    } else {
-      emailer = (
-        <div className='c-email-img-container'>
-          <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490468248/hook-1727484_iqppwy.svg' />
-          <h2>Message Recieved!</h2>
-        </div>
-      )
-    }
+    this.state = { siteUrl: 'http://hello'}
 
     return (
       <div className='c-page'>
@@ -77,7 +45,7 @@ export default class HomePage extends Component {
             </form>
           </main>
 
-          <aside className='o-section__aside-content o-section__aside-content--right-align'>
+          <aside className='o-section__aside-content o-section__aside-content--center'>
             <div className='c-phone-view'>
               <iframe title='mobile-view' src={this.state.siteUrl}></iframe>
             </div>
@@ -115,19 +83,23 @@ export default class HomePage extends Component {
             </p>
           </main>
 
-          <aside className='o-section__aside-content o-section__aside-content--lg'>
-            {emailer}
+          <aside className='o-section__aside-content o-section__aside-content--lg o-section__aside-content--center'>
+            <form
+              onSubmit={() => this.email.bind(this)}
+              className='c-contact-form'
+              action='https://formcarry.com/s/r1xlEfU3b'
+              method='POST'
+              accept-charset='UTF-8'>
+              <input type='email' placeholder='enter email address' name='email' />
+              <textarea defaultValue='Contact Me!' name='message' />
+              <button type='submit'>Send</button>
+            </form>
           </aside>
         </section>
       </div>
     )
   }
-
-  email(event) {
-    event.preventDefault()
-    this.setState({emailSent: true})
-  }
-
+  
   searchSite(event) {
     event.preventDefault()
 

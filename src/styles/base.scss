@@ -8,17 +8,18 @@
   height: 100%;
 }
 
-.c-page.c-page--construction {
-  @include flex-container(center, center, center);
-
-  > h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  > img {
-    width: 200px;
-  }
+.c-page--received {
+  @include flex-container(center, center, center)
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    $cl-neutral-6, #fd746c,
+    $cl-green, #00c9ff,
+    $cl-purple, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient-bg 200s ease infinite;
 }
 
 .o-section {

@@ -36,7 +36,7 @@
 }
 
 .c-hero__content-container {
-  @include flex-container(center, center, center);
+  @include flex-container(center, center, center, nowrap, column);
   position: absolute;
   top: 0;
   left: 0;

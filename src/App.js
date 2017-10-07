@@ -5,6 +5,7 @@ import './styles.scss'
 import Header from './components/header'
 import HomePage from './pages/home'
 import AboutPage from './pages/about'
+import MessageReceived from './pages/message-received'
 
 export default class App extends Component {
   render () {
@@ -14,6 +15,7 @@ export default class App extends Component {
           <Header />
           <Route exact path='/' component={HomePage} />
           <Route exact path='/about' component={AboutPage} />
+          <Route exact path='/message-received' component={MessageReceived} />
         </div>
       </Router>
     )
