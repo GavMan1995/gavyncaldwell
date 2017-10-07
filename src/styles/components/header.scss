@@ -8,16 +8,25 @@
   background-color: $cl-neutral-6;
   box-shadow: 0 0 8px $cl-black;
   z-index: 1000;
+
+  @include media-query(sm) {
+    height: 42px;
+  }
 }
 
 .c-header__logo {
-  width: 200px;
-  height: auto;
+  width: 256px;
+  height: 40px;
   margin: 8px 16px;
 
   > img {
     width: 100%;
     height: auto;
+  }
+
+  @include media-query(sm) {
+    width: 170px;
+    height: 26px;
   }
 }
 
