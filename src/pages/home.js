@@ -17,10 +17,12 @@ export default class HomePage extends Component {
     if (this.state.emailSent === false) {
       emailer = (
         <form
+          onSubmit={() => this.email.bind(this)}
+          className='c-contact-form'
+          action='https://formcarry.com/s/r1xlEfU3b'
           method='POST'
-          action='https://formspree.io/gavmanweb@gmail.com'
-          className='c-contact-form'>
-          <input type='email' placeholder='enter email address' name='_replyto' />
+          accept-charset='UTF-8'>
+          <input type='email' placeholder='enter email address' name='email' />
           <textarea defaultValue='Contact Me!' name='message' />
           <button type='submit'>Send</button>
         </form>
@@ -54,11 +56,11 @@ export default class HomePage extends Component {
             <h1 className='o-section__header'>Responsive Design</h1>
             <p>
               In todays world
-              <a href='http://tcrn.ch/2mHKS9Y' target='_blank' rel="noopener noreferrer"> 51.3% </a>
+              <a href='http://tcrn.ch/2mHKS9Y' target='_blank' rel='noopener noreferrer'> 51.3% </a>
               of everyone that visits your website will do so on their phones.
               Lets make sure that when they visit yours, it's a great experience!
               read
-              <a href='http://bit.ly/2nW6j81' target='_blanck' without rel="noopener noreferrer">  here </a>
+              <a href='http://bit.ly/2nW6j81' target='_blanck' without rel='noopener noreferrer'>  here </a>
               to learn more.
             </p>
 
@@ -122,6 +124,7 @@ export default class HomePage extends Component {
   }
 
   email(event) {
+    event.preventDefault()
     this.setState({emailSent: true})
   }
 
