@@ -35,6 +35,10 @@ export default class HomePage extends Component {
             <h2 className='c-search-form-header'>
               Search here for your website and see if it's mobile friendly
             </h2>
+            <small>
+              (If your website doesn't load it means you don't allow it
+              to render in iframes)
+            </small>
             <form className='c-search-form' onSubmit={this.searchSite.bind(this)}>
               <input
                 defaultValue='http://'
