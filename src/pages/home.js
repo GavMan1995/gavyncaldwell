@@ -4,7 +4,7 @@ export default class HomePage extends Component {
   constructor () {
     super()
 
-    this.state = { siteUrl: 'http://hello' }
+    this.state = { siteUrl: 'http://gavyncaldwell.com' }
   }
   render () {
     return (
