@@ -1,9 +1,12 @@
 import React , { Component } from 'react'
 
 export default class HomePage extends Component {
-  render () {
-    this.state = { siteUrl: 'http://hello'}
+  constructor () {
+    super()
 
+    this.state = { siteUrl: 'http://hello' }
+  }
+  render () {
     return (
       <div className='c-page'>
         <section className='c-hero'>
@@ -28,7 +31,7 @@ export default class HomePage extends Component {
               of everyone that visits your website will do so on their phones.
               Lets make sure that when they visit yours, it's a great experience!
               read
-              <a href='http://bit.ly/2nW6j81' target='_blanck' without rel='noopener noreferrer'>  here </a>
+              <a href='http://bit.ly/2nW6j81' target='_blanck' rel='noopener noreferrer'>  here </a>
               to learn more.
             </p>
 
@@ -89,11 +92,10 @@ export default class HomePage extends Component {
 
           <aside className='o-section__aside-content o-section__aside-content--lg o-section__aside-content--center'>
             <form
-              onSubmit={() => this.email.bind(this)}
               className='c-contact-form'
               action='https://formcarry.com/s/r1xlEfU3b'
               method='POST'
-              accept-charset='UTF-8'>
+              acceptCharset='UTF-8'>
               <input type='email' placeholder='enter email address' name='email' />
               <textarea defaultValue='Contact Me!' name='message' />
               <button type='submit'>Send</button>
@@ -106,8 +108,8 @@ export default class HomePage extends Component {
 
   searchSite(event) {
     event.preventDefault()
-
     let url = this.refs.siteSearch.value
-    this.setState({siteUrl: url})
+    this.setState({ siteUrl: url })
+    console.log(this.state)
   }
 }
