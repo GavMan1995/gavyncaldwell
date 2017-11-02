@@ -6,10 +6,17 @@ export default class AboutPage extends Component {
       <div className='c-page'>
         <section className='o-section o-section--gradient o-section--center'>
           <div className='c-img-container c-img-container--about-me'>
-            <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/gavyn_caldwell_alt_riqaio.jpg'/>
+            <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/gavyn_caldwell_alt_riqaio.jpg' />
           </div>
           <h2 className='c-about-me-title'>Gavyn Caldwell</h2>
-          <p>Husband, Siberian Husky Dad, Yo-Yoer and Web Developer</p>
+          <p className='c-about-me-title'>Husband, Siberian Husky Dad, Yo-Yoer and Web Developer</p>
+
+          <a 
+            className='c-btn-gradient' 
+            href='http://res.cloudinary.com/gavmanweb/image/upload/v1509581043/Resume_izs6bs.pdf' 
+            download>
+            <p className='c-btn-gradient__text'>Download My Resume</p>
+          </a>
 
           <div className='c-about-me-links'>
             <a

@@ -53,6 +53,10 @@
   background-repeat: no-repeat;
   background-size: 1000% 1000%;
   animation: gradient-bg 200s ease infinite;
+
+  @include media-query(sm) {
+    margin-top: 42px;
+  }
 }
 
 .o-section.o-section--homepage-bg {
