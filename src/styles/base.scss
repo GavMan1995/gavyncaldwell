@@ -19,7 +19,7 @@
     $cl-purple, #e73827);
   background-repeat: no-repeat;
   background-size: 1000% 1000%;
-  animation: gradient-bg 100s ease infinite;
+  animation: gradient-bg 150s ease infinite;
 }
 
 .o-section {
@@ -52,7 +52,7 @@
     $cl-purple, #e73827);
   background-repeat: no-repeat;
   background-size: 1000% 1000%;
-  animation: gradient-bg 100s ease infinite;
+  animation: gradient-bg 150s ease infinite;
 
   @include media-query(sm) {
     margin-top: 42px;
