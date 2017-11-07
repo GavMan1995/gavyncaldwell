@@ -45,15 +45,12 @@ export default class AboutPage extends Component {
         <section className='o-section o-section--white o-section--no-bottom-padding'>
           <h1 className='o-section__header'>About me</h1>
           <p className='c-about-me-copy'>
-            I have been professionally programming since may of 2016, and
-            unprofessionally programming since, well, I can't remember. I went
-            to the DevPoint Labs bootcamp Full Stack Development Course
-            enjoying every second of it, and fell even more in love with programming.
-            In my free time I enjoy yoyoing, playing with my husky puppy, taking
-            care of my snakes and going on adventures with my beautiful wife.
-            I also love taking online courses and always keeping my programming
-            skills up to date, and am currently interested in leveling up my
-            design skills.
+            I am a Front End Web Developer with a passion for building excellent,
+            beautiful, and responsive websites. I am very proficient with HTML, CSS,
+            React and becoming better with NodeJS and JavaScript in general.
+            I love learning and am constantly taking new online courses with an emphasis
+            on learning JavaScript. I love learning to code, writing code and being able 
+            to use my creativity while making amazing websites.
           </p>
         </section>
 

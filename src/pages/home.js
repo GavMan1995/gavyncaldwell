@@ -13,9 +13,8 @@ export default class HomePage extends Component {
           <div className='c-hero__content-container'>
             <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg'/>
             <h3>
-              Front End Web Developer committed to helping you make an amazing
-              experience for your users, and have an amazing one
-              yourself.
+              Front End Web Developer committed to helping you give your 
+              users an amazing experience, and have an amazing one yourself.
             </h3>
           </div>
           <span className='c-scrolldown'>Scroll Down &#8595;</span>
@@ -71,7 +70,7 @@ export default class HomePage extends Component {
             <p>
               UX means User Experience, and it is EXTREMELY important! Great
               UX will help your users get done what they need to
-              get done, find what they're looking for and over all have an
+              get done, find what they're looking for and over all, have an
               enjoyable experience. Lets give your users just that.
               read <a href='http://bit.ly/2nW6j81' target='_blanck'> here </a>
               to learn more.
@@ -84,8 +83,8 @@ export default class HomePage extends Component {
           <main className='o-section__main-content'>
             <h1 className='o-section__header'>Contact Me!</h1>
             <p>
-              Wether you need a website from scratch or you need to fix your website
-              I can help. Contact me, tell me everything I need to know and
+              Whether you need a website from scratch or you need to fix your website,
+              I can help. Contact me, tell me everything I need to know, and
               I'll contact you asap so we can start making your website AWESOME.
             </p>
           </main>
