@@ -1,117 +1,99 @@
-import React , { Component } from 'react'
+import React, { Component } from 'react'
 
 export default class HomePage extends Component {
-  constructor () {
-    super()
-
-    this.state = { siteUrl: 'http://gavyncaldwell.com' }
-  }
   render () {
     return (
       <div className='c-page'>
-        <section className='c-hero'>
-          <div className='c-hero__content-container'>
-            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg'/>
-            <h3>
-              Front End Web Developer committed to helping you give your 
-              users an amazing experience, and have an amazing one yourself.
-            </h3>
+        <section className='o-section o-section--gradient o-section--center'>
+          <div className='c-img-container c-img-container--about-me'>
+            <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/gavyn_caldwell_alt_riqaio.jpg' />
           </div>
-          <span className='c-scrolldown'>Scroll Down &#8595;</span>
-          <video className='c-video' playsInline autoPlay muted loop>
-            <source src='https://res.cloudinary.com/gavmanweb/video/upload/q_80/v1510093657/web-vid_zakx7r.mp4' type='video/mp4' />
-          </video>
-          <span className='c-overlay c-overlay--lite' />
+          <h2 className='c-about-me-title'>Gavyn Caldwell</h2>
+          <p className='c-about-me-title'>Husband, Siberian Husky Dad, Yo-Yoer and Front-end Web Developer</p>
+
+          {/* <a 
+            className='c-btn-gradient' 
+            href='http://res.cloudinary.com/gavmanweb/image/upload/v1509581043/Resume_izs6bs.pdf' 
+            download>
+            <p className='c-btn-gradient__text'>Download My Resume</p>
+          </a> */}
+
+          <div className='c-about-me-links'>
+            <a
+              href='https://github.com/GavMan1995'
+              target='_blank'
+              rel="noopener noreferrer">
+              <span className='fa fa-github-square'/>
+            </a>
+
+            <a
+              href='https://www.linkedin.com/in/gavman1995/'
+              target='_blank'
+              rel="noopener noreferrer">
+              <span className='fa fa-linkedin-square'/>
+            </a>
+
+            <a
+              href='https://codepen.io/gavman1995/'
+              target='_blank'
+              rel="noopener noreferrer">
+              <span className='fa fa-codepen'/>
+            </a>
+          </div>
         </section>
 
-        <section className='o-section'>
-          <main className='o-section__main-content'>
-            <h1 className='o-section__header'>Responsive Design</h1>
-            <p>
-              In todays world
-              <a href='http://tcrn.ch/2mHKS9Y' target='_blank' rel='noopener noreferrer'> 51.3% </a>
-              of everyone that visits your website will do so on their phones.
-              Lets make sure that when they visit yours, it's a great experience!
-              read
-              <a href='http://bit.ly/2nW6j81' target='_blanck' rel='noopener noreferrer'>  here </a>
-              to learn more.
-            </p>
-
-            <h2 className='c-search-form-header'>
-              Search here for your website and see if it's mobile friendly
-            </h2>
-            <small>
-              (If your website doesn't load it means you don't allow it
-              to render in iframes)
-            </small>
-            <form className='c-search-form' onSubmit={this.searchSite.bind(this)}>
-              <input
-                defaultValue='http://'
-                type='text'
-                placeholder='Enter Your Website URL'
-                ref='siteSearch'/>
-              <button type='submit'>Search</button>
-            </form>
-          </main>
-
-          <aside className='o-section__aside-content o-section__aside-content--center'>
-            <div className='c-phone-view'>
-              <iframe title='mobile-view' src={this.state.siteUrl}></iframe>
-            </div>
-          </aside>
+        <section className='o-section o-section--white o-section--no-bottom-padding'>
+          <h1 className='o-section__header'>About me</h1>
+          <p className='c-about-me-copy'>
+            I am a Front End Web Developer with a passion for building excellent,
+            beautiful, and responsive websites. I am very proficient with HTML, CSS,
+            React and becoming better with NodeJS and JavaScript in general.
+            I love learning and am constantly taking new online courses with an emphasis
+            on learning JavaScript. I love learning to code, writing code and being able 
+            to use my creativity while making amazing websites.
+          </p>
         </section>
 
-        <section className='o-section o-section--homepage-bg'>
-          <aside className='o-section__aside-content o-section__aside-content--vertical-center'>
-            <div className='c-img-container c-img-container--hide-on-mobile'>
-              <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490392405/responsive-2044932_1920_j3yiey.png' />
-            </div>
-          </aside>
+        <section className='o-section o-section--white o-section--no-bottom-padding'>
+          <h1 className='o-section__header'>Project Examples</h1>
+          <a
+            href='https://belcher.herokuapp.com/'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='c-card'>
+            <h3>Belcher (DevPoint Labs Capstone)</h3>
+            <img
+              alt='Belcher'
+              src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338216/Screen_Shot_2017-10-06_at_8.50.43_AM_zwowak.png' />
+          </a>
 
-          <main className='o-section__main-content'>
-            <h1 className='o-section__header'>Great UX</h1>
-            <p>
-              UX means User Experience, and it is EXTREMELY important! Great
-              UX will help your users get done what they need to
-              get done, find what they're looking for and over all, have an
-              enjoyable experience. Lets give your users just that.
-              read <a href='http://bit.ly/2nW6j81' target='_blanck'> here </a>
-              to learn more.
-            </p>
-          </main>
-          <span className='c-overlay' />
-        </section>
+          <a
+            href='https://www.nav.com'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='c-card'>
+            <h3>Nav (Current Fulltime Job)</h3>
+            <img
+              alt='Nav Inc'
+              src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338736/Screen_Shot_2017-10-06_at_7_otwlww.png' />
+          </a>
 
-        <section className='o-section' id='contact'>
-          <main className='o-section__main-content'>
-            <h1 className='o-section__header'>Contact Me!</h1>
-            <p>
-              Whether you need a website from scratch or you need to fix your website,
-              I can help. Contact me, tell me everything I need to know, and
-              I'll contact you asap so we can start making your website AWESOME.
-            </p>
-          </main>
+          <a
+            href='https://github.com/GavMan1995/nasgul'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='c-card'>
+            <h3>Nasgul (Unused CSS Finder)</h3>
+            <img
+              alt='Nasgul'
+              src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338316/Screen_Shot_2017-10-06_at_7.04.55_PM_zuv0mu.png' />
+          </a>
 
-          <aside className='o-section__aside-content o-section__aside-content--lg o-section__aside-content--center'>
-            <form
-              className='c-contact-form'
-              action='https://formcarry.com/s/r1xlEfU3b'
-              method='POST'
-              acceptCharset='UTF-8'>
-              <input type='email' placeholder='enter email address' name='email' />
-              <textarea defaultValue='Contact Me!' name='message' />
-              <button type='submit'>Send</button>
-            </form>
-          </aside>
+          <div className='c-card-placeholder' />
+          <div className='c-card-placeholder' />
+          <div className='c-card-placeholder' />
         </section>
       </div>
     )
-  }
-
-  searchSite(event) {
-    event.preventDefault()
-    let url = this.refs.siteSearch.value
-    this.setState({ siteUrl: url })
-    console.log(this.state)
   }
 }

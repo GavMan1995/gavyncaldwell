@@ -9,9 +9,8 @@ export default function Header() {
       </Link>
 
       <div className='c-header__nav'>
-        <Link to='/about'>
-          About Me
-        </Link>
+        <Link to='/'>Home</Link>
+        <Link to='/hire'>Hire Me</Link>
       </div>
     </div>
   )

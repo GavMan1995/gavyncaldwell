@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import './styles.scss'
 import Header from './components/header'
 import HomePage from './pages/home'
-import AboutPage from './pages/about'
+import HireMePage from './pages/hire-me'
 import MessageReceived from './pages/message-received'
 
 export default class App extends Component {
@@ -14,7 +14,7 @@ export default class App extends Component {
         <div className='o-page'>
           <Header />
           <Route exact path='/' component={HomePage} />
-          <Route exact path='/about' component={AboutPage} />
+          <Route exact path='/hire' component={HireMePage} />
           <Route exact path='/message-received' component={MessageReceived} />
         </div>
       </Router>
