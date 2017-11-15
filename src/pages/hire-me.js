@@ -1,20 +1,20 @@
-import React , { Component } from 'react'
+import React, { Component } from 'react'
 
 export default class HireMePage extends Component {
-  constructor () {
+  constructor() {
     super()
 
     this.state = { siteUrl: 'http://gavyncaldwell.com' }
   }
-  render () {
+  render() {
     return (
       <div className='c-page'>
         <section className='c-hero'>
           <div className='c-hero__content-container'>
-            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg'/>
+            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg' />
             <h3>
-              Front End Web Developer committed to helping you give your 
-              users an amazing experience, and have an amazing one yourself.
+              Front End Web Developer committed to helping you give your
+              users an amazing experience.
             </h3>
           </div>
           <span className='c-scrolldown'>Scroll Down &#8595;</span>
@@ -49,7 +49,7 @@ export default class HireMePage extends Component {
                 defaultValue='http://'
                 type='text'
                 placeholder='Enter Your Website URL'
-                ref='siteSearch'/>
+                ref='siteSearch' />
               <button type='submit'>Search</button>
             </form>
           </main>
