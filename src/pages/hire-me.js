@@ -11,17 +11,16 @@ export default class HireMePage extends Component {
       <div className='c-page'>
         <section className='c-hero'>
           <div className='c-hero__content-container'>
-            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525925/GavynFullTop_vvkgjf.svg' />
+            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1510858974/CuriousCodeFullTop_zz9d9a.png' />
             <h3>
               Front End Web Developer committed to helping you give your
-              users an amazing experience.
+              users an amazing experience, and have an amazing one yourself.
             </h3>
           </div>
           <span className='c-scrolldown'>Scroll Down &#8595;</span>
           <video className='c-video' playsInline autoPlay muted loop>
             <source src='https://res.cloudinary.com/gavmanweb/video/upload/q_80/v1510093657/web-vid_zakx7r.mp4' type='video/mp4' />
           </video>
-          <span className='c-overlay c-overlay--lite' />
         </section>
 
         <section className='o-section'>

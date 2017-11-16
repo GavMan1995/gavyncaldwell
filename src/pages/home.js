@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 
 export default class HomePage extends Component {
-  render () {
+  render() {
     return (
       <div className='c-page'>
         <section className='o-section o-section--gradient o-section--center'>
           <div className='c-img-container c-img-container--about-me'>
             <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/gavyn_caldwell_alt_riqaio.jpg' />
           </div>
-          <h2 className='c-about-me-title'>Gavyn Caldwell</h2>
           <p className='c-about-me-title'>Husband, Siberian Husky Dad, Yo-Yoer and Front-end Web Developer</p>
 
           {/* <a 
@@ -23,21 +22,21 @@ export default class HomePage extends Component {
               href='https://github.com/GavMan1995'
               target='_blank'
               rel="noopener noreferrer">
-              <span className='fa fa-github-square'/>
+              <span className='fa fa-github-square' />
             </a>
 
             <a
               href='https://www.linkedin.com/in/gavman1995/'
               target='_blank'
               rel="noopener noreferrer">
-              <span className='fa fa-linkedin-square'/>
+              <span className='fa fa-linkedin-square' />
             </a>
 
             <a
               href='https://codepen.io/gavman1995/'
               target='_blank'
               rel="noopener noreferrer">
-              <span className='fa fa-codepen'/>
+              <span className='fa fa-codepen' />
             </a>
           </div>
         </section>
@@ -49,13 +48,12 @@ export default class HomePage extends Component {
             beautiful, and responsive websites. I am very proficient with HTML, CSS,
             React and becoming better with NodeJS and JavaScript in general.
             I love learning and am constantly taking new online courses with an emphasis
-            on learning JavaScript. I love learning to code, writing code and being able 
+            on learning JavaScript. I love learning to code, writing code and being able
             to use my creativity while making amazing websites.
           </p>
         </section>
 
-        <section className='o-section o-section--white o-section--no-bottom-padding'>
-          <h1 className='o-section__header'>Project Examples</h1>
+        <section className='o-section o-section--flush'>
           <a
             href='https://belcher.herokuapp.com/'
             rel='noopener noreferrer'
@@ -92,8 +90,8 @@ export default class HomePage extends Component {
           <div className='c-card-placeholder' />
           <div className='c-card-placeholder' />
           <div className='c-card-placeholder' />
-        </section>
-      </div>
+        </section >
+      </div >
     )
   }
 }
