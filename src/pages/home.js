@@ -41,7 +41,7 @@ export default class HomePage extends Component {
           </div>
         </section>
 
-        <section className='o-section o-section--white o-section--no-bottom-padding'>
+        <section className='o-section o-section--white'>
           <h1 className='o-section__header'>About me</h1>
           <p className='c-about-me-copy'>
             I am a Front End Web Developer with a passion for building excellent,
@@ -53,43 +53,52 @@ export default class HomePage extends Component {
           </p>
         </section>
 
-        <section className='o-section o-section--flush'>
+        <section className='c-projects'>
           <a
             href='https://belcher.herokuapp.com/'
             rel='noopener noreferrer'
             target='_blank'
-            className='c-card'>
-            <h3>Belcher (DevPoint Labs Capstone)</h3>
+            className='c-projects__project'>
             <img
               alt='Belcher'
               src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338216/Screen_Shot_2017-10-06_at_8.50.43_AM_zwowak.png' />
+            <div className='c-project__about'>
+              <h1>Belcher</h1>
+              <h3>Capstone project at DevPoint Labs, essentially tinder for food.</h3>
+            </div>
           </a>
 
           <a
             href='https://www.nav.com'
             rel='noopener noreferrer'
             target='_blank'
-            className='c-card'>
-            <h3>Nav (Current Fulltime Job)</h3>
+            className='c-projects__project'>
             <img
               alt='Nav Inc'
               src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338736/Screen_Shot_2017-10-06_at_7_otwlww.png' />
+            <div className='c-project__about'>
+              <h1>Nav Inc</h1>
+              <h3>1 year 6 months full time job, Fintech app for small businesses.</h3>
+            </div>
           </a>
 
           <a
             href='https://github.com/GavMan1995/nasgul'
             rel='noopener noreferrer'
             target='_blank'
-            className='c-card'>
-            <h3>Nasgul (Unused CSS Finder)</h3>
+            className='c-projects__project'>
             <img
               alt='Nasgul'
               src='https://res.cloudinary.com/gavmanweb/image/upload/v1507338316/Screen_Shot_2017-10-06_at_7.04.55_PM_zuv0mu.png' />
+            <div className='c-project__about'>
+              <h1>Nasgul</h1>
+              <h3>Script used to find unused css and delete it.</h3>
+            </div>
           </a>
 
-          <div className='c-card-placeholder' />
-          <div className='c-card-placeholder' />
-          <div className='c-card-placeholder' />
+          <div className='c-projects__project-placeholder' />
+          <div className='c-projects__project-placeholder' />
+          <div className='c-projects__project-placeholder' />
         </section >
       </div >
     )
