@@ -23,7 +23,7 @@ export default class HireMePage extends Component {
           </video>
         </section>
 
-        <section className='o-section'>
+        <section className='o-section o-section--white'>
           <main className='o-section__main-content'>
             <h1 className='o-section__header'>Responsive Design</h1>
             <p>
@@ -55,7 +55,9 @@ export default class HireMePage extends Component {
 
           <aside className='o-section__aside-content o-section__aside-content--center'>
             <div className='c-phone-view'>
+              <span className='c-phone-speaker' />
               <iframe title='mobile-view' src={this.state.siteUrl}></iframe>
+              <span className='c-phone-mic' />
             </div>
           </aside>
         </section>
@@ -81,7 +83,7 @@ export default class HireMePage extends Component {
           <span className='c-overlay' />
         </section>
 
-        <section className='o-section' id='contact'>
+        <section className='o-section o-section--white'>
           <main className='o-section__main-content'>
             <h1 className='o-section__header'>Contact Me!</h1>
             <p>

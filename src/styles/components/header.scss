@@ -82,7 +82,7 @@
     transform: translateX(0);
   }
 
-  @include media-query(md) {
+  @include media-query(sm) {
     width: 80%;
   }
 }

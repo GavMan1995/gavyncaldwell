@@ -13,7 +13,7 @@
   position: absolute;
   bottom: 16px;
   left: calc(50% - 48px);
-  color: $cl-neutral-4;
+  color: $cl-neutral-2;
   z-index: 300;
   animation: bounce 10s 2s infinite;
 
@@ -46,7 +46,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($cl-white, 0.8);
+  background-color: rgba($cl-neutral-6, 0.8);
   z-index: 100;
 }
 
@@ -87,10 +87,10 @@
   padding: 64px 16px;
   //iphone gold color
   //scss-lint:disable ColorVariable
-  border: 4px solid $cl-green;
+  border: 6px solid $cl-neutral-6;
   border-radius: 24px;
-  background-color: $cl-white;
-  box-shadow: 0 16px 56px 4px $cl-black;
+  background-color: $cl-neutral-5;
+  box-shadow: 0 4px 40px 12px $cl-neutral-5;
 
   @include media-query(md) {
     margin-top: 34px;
@@ -102,24 +102,23 @@
 
   &::before {
     position: absolute;
-    top: 32px;
-    left: 136px;
-    width: 80px;
-    height: 8px;
-    border-radius: 12px;
-    background-color: $cl-neutral-3;
+    top: 240px;
+    right: -10px;
+    width: 4px;
+    height: 60px;
+    border-radius: 0 3px 3px 0;
+    background-color: $cl-neutral-6;
     content: '';
   }
 
   &::after {
     position: absolute;
-    bottom: 8px;
-    left: 148px;
-    width: 56px;
-    height: 56px;
-    border: 2px solid $cl-green;
-    border-radius: 50%;
-    background-color: $cl-neutral-2;
+    top: 108px;
+    right: -10px;
+    width: 4px;
+    height: 100px;
+    border-radius: 0 3px 3px 0;
+    background-color: $cl-neutral-6;
     content: '';
   }
 
@@ -128,8 +127,31 @@
   > iframe {
     width: 320px;
     height: 568px;
-    border: 1px solid $cl-neutral-3;
+    border: 1px solid $cl-neutral-6;
   }
+}
+
+.c-phone-speaker {
+  position: absolute;
+  top: 32px;
+  left: 116px;
+  width: 120px;
+  height: 8px;
+  border-radius: 12px;
+  background-color: $cl-neutral-6;
+  content: '';
+}
+
+.c-phone-mic {
+  position: absolute;
+  bottom: 4px;
+  left: 148px;
+  width: 56px;
+  height: 56px;
+  border: 2px solid $cl-neutral-6;
+  border-radius: 50%;
+  background-color: $cl-neutral-4;
+  content: '';
 }
 
 .c-search-form-header {
