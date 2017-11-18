@@ -39,7 +39,7 @@ export default class HireMePage extends Component {
             <h2 className='c-search-form-header'>
               Search here for your website and see if it's mobile friendly
             </h2>
-            <small>
+            <small className='c-search-form-header'>
               (If your website doesn't load it means you don't allow it
               to render in iframes)
             </small>
