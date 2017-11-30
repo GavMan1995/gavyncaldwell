@@ -23,8 +23,17 @@
 
 .c-img-container--react {
   @include flex-item(280px, 0);
+
+  @include screen-smaller-than(sm) {
+    flex-basis: 120px;
+  }
 }
 .c-img-container--html-css {
   @include flex-item(160px, 1);
   padding: 16px;
+
+  @include screen-smaller-than(sm) {
+    flex-basis: 120px;
+    flex-grow: 0;
+  }
 }
