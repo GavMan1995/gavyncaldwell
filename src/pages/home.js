@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <div className='c-page'>
       <section className='o-section o-section--gradient o-section--center'>
-        <div className='c-img-container c-img-container--about-me'>
+        {/* <div className='c-img-container c-img-container--about-me'>
           <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/portfolio/gavyn_caldwell_alt_riqaio.jpg' />
-        </div>
+        </div> */}
         <p className='c-about-me-title'>
           Husband, Siberian Husky Dad, Yo-Yoer and Front-end Web Developer
             </p>
