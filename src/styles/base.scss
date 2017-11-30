@@ -1,11 +1,39 @@
 
 .o-render-target {
   height: 100%;
+  width: 100%;
   padding-top: 56px;
+}
+
+.o-container {
+  width: 100%;
+  height: 100%;
+
+  @include screen-larger-than(1920px) {
+    padding-left: calc(50% - 960px);
+    padding-right: calc(50% - 960px);
+  }
+
+  > span {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('https://res.cloudinary.com/gavmanweb/image/upload/v1512004291/bright-squares_fh12l8.png');
+    background-size: auto;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
 
 .o-page {
   height: 100%;
+
+  @include screen-larger-than(1920px) {
+    box-shadow: 0 0 48px 8px $cl-neutral-6;
+  }
 }
 
 .c-page--received {
@@ -27,11 +55,6 @@
   padding: 80px 5%;
   background-color: $cl-neutral-5;
   color: $cl-white;
-
-  @include screen-larger-than(1600px) {
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-  }
 
   @include screen-smaller-than(md) {
     padding: 16px;

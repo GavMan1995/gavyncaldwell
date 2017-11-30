@@ -28,11 +28,7 @@
 .c-projects {
   @include flex-container();
   width: 100%;
-
-  @include screen-larger-than(1600px) {
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-  }
+  background-color: $cl-white;
 }
 
 .c-projects__project {

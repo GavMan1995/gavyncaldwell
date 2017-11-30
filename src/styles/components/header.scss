@@ -4,10 +4,17 @@
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 1936px;
   height: 56px;
   background-color: $cl-neutral-6;
   box-shadow: 0 0 8px $cl-black;
   z-index: 1000;
+
+  @include screen-larger-than(1920px) {
+    margin-left: calc(50% - 968px);
+    margin-right: calc(50% - 968px);
+    border-radius: 0 0 8px 8px;
+  }
 
   @include screen-smaller-than(sm) {
     height: 42px;
@@ -37,7 +44,8 @@
   margin-right: 16px;
   padding: 4px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 1;
 
   &:hover {
     transform: scale(1.1);
@@ -63,6 +71,7 @@
 
   &.is-open {
     transform: translateX(150%);
+    opacity: 0;
   }
 }
 
@@ -75,11 +84,13 @@
   background-color: $cl-neutral-6;
   box-shadow: 0 0 8px 4px $cl-black;
   transform: translateX(150%);
-  transition: transform 0.2s;
   overflow: scroll;
+  opacity: 0;
+  transition: transform 0.2s, opacity 0.2s;
 
   &.is-open {
     transform: translateX(0);
+    opacity: 1;
   }
 
   @include screen-smaller-than(sm) {

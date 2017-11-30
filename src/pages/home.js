@@ -45,11 +45,27 @@ export default class HomePage extends Component {
           <h1 className='o-section__header'>About me</h1>
           <p className='c-about-me-copy'>
             I am a Front End Web Developer with a passion for building excellent,
-            beautiful, and responsive websites. I am very proficient with HTML, CSS,
-            React and becoming better with NodeJS and JavaScript in general.
+            beautiful, and responsive websites. I code amazing websites using ReactJS,
+            HTML, CSS and I am currently growing my NodeJS skills.
             I love learning and am constantly taking new online courses with an emphasis
             on learning JavaScript. I love learning to code, writing code and being able
             to use my creativity while making amazing websites.
+            My professional experience includes working closely with Designers and Back End
+            developers, to deliver new enterprise apps, as well as a new line of revenue
+            for "Nav Inc" using HTML5, CSS3 and JavaScript (React).
+          </p>
+        </section>
+
+        <section className='o-section'>
+          <h1 className='o-section__header'>Why React?</h1>
+          <p className='c-about-me-copy'>
+            React is a JavaScript library made by Facebook, reactjs.org specifies react as
+            "A declarative, efficient, and flexible JavaScript library for building user interfaces."
+            In my words, React is THE BEST JavaScript framework/library to build the front end of a website
+            or static websites in general. React makes it very easy to make a UI that
+            is interactive, flexible, and user friendly. React makes it easy to hook up API's, CMS's, Backends etc,
+            and display the data on your website. React allows single page apps, which means routing is insanely fast.
+            And in general makes writing JavaScript a breeze.
           </p>
         </section>
 
