@@ -45,7 +45,7 @@ export default class HireMePage extends Component {
             </small>
             <form className='c-search-form' onSubmit={this.searchSite.bind(this)}>
               <input
-                defaultValue='http://'
+                defaultValue='https://'
                 type='text'
                 placeholder='Enter Your Website URL'
                 ref='siteSearch' />
