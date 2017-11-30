@@ -4,7 +4,7 @@ export default class HireMePage extends Component {
   constructor() {
     super()
 
-    this.state = { siteUrl: 'http://gavyncaldwell.com' }
+    this.state = { siteUrl: 'https://gavyncaldwell.com' }
   }
   render() {
     return (
