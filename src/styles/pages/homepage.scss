@@ -4,7 +4,7 @@
   height: 100vh;
   overflow: hidden;
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     height: 400px;
   }
 }
@@ -17,7 +17,7 @@
   z-index: 300;
   animation: bounce 10s 2s infinite;
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     display: none;
   }
 }
@@ -34,7 +34,7 @@
   background-size: cover;
   z-index: 100;
 
-  @include media-query(730px) {
+  @include screen-smaller-than(730px) {
     min-width: 100%;
     height: 100%;
   }
@@ -76,7 +76,7 @@
     padding-top: 32px;
   }
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     padding-top: 60px;
   }
 }
@@ -92,11 +92,11 @@
   background-color: $cl-neutral-5;
   box-shadow: 0 4px 40px 12px $cl-neutral-5;
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     margin-top: 34px;
   }
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     display: none;
   }
 
@@ -158,7 +158,7 @@
   width: 100%;
   padding-top: 24px;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     display: none;
   }
 }
@@ -168,7 +168,7 @@
   width: 100%;
   padding-top: 16px;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     display: none;
   }
 
@@ -216,11 +216,14 @@
 
 .c-footer {
   @include flex-container();
-  padding: 80px 5%;
+  padding: 16px 5%;
   background-color: $cl-neutral-6;
   color: $cl-white;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient;
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     padding: 24px;
   }
 }
@@ -230,7 +233,7 @@
   @include flex-container(center, center);
   padding: 16px;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     padding: 0;
   }
 

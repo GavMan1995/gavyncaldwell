@@ -9,7 +9,7 @@
   box-shadow: 0 0 8px $cl-black;
   z-index: 1000;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     height: 42px;
   }
 }
@@ -19,7 +19,7 @@
   height: 40px;
   margin: 8px 16px;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     width: 180px;
     height: 28px;
   }
@@ -51,7 +51,7 @@
     background-color: $cl-white;
   }
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     width: 42px;
     height: 42px;
 
@@ -82,7 +82,7 @@
     transform: translateX(0);
   }
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     width: 80%;
   }
 }

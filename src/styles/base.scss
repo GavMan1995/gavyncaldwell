@@ -28,7 +28,12 @@
   background-color: $cl-neutral-5;
   color: $cl-white;
 
-  @include media-query(md) {
+  @include screen-larger-than(1600px) {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+  }
+
+  @include screen-smaller-than(md) {
     padding: 16px;
   }
 }
@@ -59,7 +64,7 @@
   background-size: 1000% 1000%;
   animation: gradient-bg 150s ease infinite;
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     margin-top: 42px;
   }
 }
@@ -96,7 +101,7 @@
 .o-section__aside-content--right-align {
   justify-content: flex-end;
 
-  @include media-query(md) {
+  @include screen-smaller-than(md) {
     justify-content: center;
   }
 }

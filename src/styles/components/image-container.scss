@@ -7,7 +7,7 @@
 }
 
 .c-img-container.c-img-container--hide-on-mobile {
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     display: none;
   }
 }

@@ -28,6 +28,11 @@
 .c-projects {
   @include flex-container();
   width: 100%;
+
+  @include screen-larger-than(1600px) {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+  }
 }
 
 .c-projects__project {
@@ -41,7 +46,7 @@
     min-width: 100%;
   }
 
-  @include media-query(sm) {
+  @include screen-smaller-than(sm) {
     height: auto;
 
     > img {

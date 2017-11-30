@@ -37,7 +37,7 @@
 }
 
 //Media Query Mixin
-@mixin media-query($size) {
+@mixin screen-smaller-than($size) {
   @if $size == 'sm' {
     @media (max-width: 480px) {@content;}
   }@else if $size == 'md' {
@@ -46,5 +46,17 @@
     @media (max-width: 1200px) {@content;}
   }@else {
     @media (max-width: $size) {@content;}
+  }
+}
+
+@mixin screen-larger-than($size) {
+  @if $size == 'sm' {
+    @media (min-width: 480px) {@content;}
+  }@else if $size == 'md' {
+    @media (min-width: 960px) {@content;}
+  }@else if $size == 'lg' {
+    @media (min-width: 1200px) {@content;}
+  }@else {
+    @media (min-width: $size) {@content;}
   }
 }
