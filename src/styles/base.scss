@@ -19,7 +19,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: url('https://res.cloudinary.com/gavmanweb/image/upload/v1512004291/bright-squares_fh12l8.png');
+    background: url('https://res.cloudinary.com/gavmanweb/image/upload/v1512004291/portfolio/bright-squares_fh12l8.png');
     background-size: auto;
     background-repeat: repeat;
     width: 100%;
@@ -52,7 +52,7 @@
 
 .o-section {
   @include flex-container($align-items: center);
-  padding: 80px 5%;
+  padding: 80px calc(50% - 600px);
   background-color: $cl-neutral-5;
   color: $cl-white;
 
@@ -94,7 +94,7 @@
 
 .o-section.o-section--homepage-bg {
   position: relative;
-  background: url('https://res.cloudinary.com/gavmanweb/image/upload/v1490279436/imac-606765_1920_xdbtrx.jpg');
+  background: url('https://res.cloudinary.com/gavmanweb/image/upload/v1490279436/portfolio/imac-606765_1920_xdbtrx.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -141,6 +141,12 @@
 
 .o-section__aside-content--lg {
   flex-basis: 320px;
+}
+
+.o-section__aside-content--last-on-mobile { 
+  @include screen-smaller-than(md) {
+    order: 2;
+  }
 }
 
 .c-about-me-copy {

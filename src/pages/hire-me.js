@@ -11,7 +11,7 @@ export default class HireMePage extends Component {
       <div className='c-page'>
         <section className='c-hero'>
           <div className='c-hero__content-container'>
-            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1510858974/CuriousCodeFullTop_zz9d9a.png' />
+            <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1510858974/portfolio/CuriousCodeFullTop_zz9d9a.png' />
             <h3>
               Front End Web Developer committed to helping you give your
               users an amazing experience, and have an amazing one yourself.
@@ -65,7 +65,7 @@ export default class HireMePage extends Component {
         <section className='o-section o-section--homepage-bg'>
           <aside className='o-section__aside-content o-section__aside-content--vertical-center'>
             <div className='c-img-container c-img-container--hide-on-mobile'>
-              <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490392405/responsive-2044932_1920_j3yiey.png' />
+              <img alt='' src='https://res.cloudinary.com/gavmanweb/image/upload/v1490392405/portfolio/responsive-2044932_1920_j3yiey.png' />
             </div>
           </aside>
 
