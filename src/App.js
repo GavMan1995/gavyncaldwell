@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
 import './styles.scss'
-import Footer from './components/footer'
+// import Footer from './components/footer'
 import Header from './components/header'
 import HomePage from './pages/home'
 import HireMePage from './pages/hire-me'
