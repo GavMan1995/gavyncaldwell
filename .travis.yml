@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm install -g surge
+  - npm run build
+deploy:
+  - surge ./build gavyncaldwell.com
+  on:
+    branch: master

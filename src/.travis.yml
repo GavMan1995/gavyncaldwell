@@ -1,8 +1,0 @@
-language: node_js
-install:
-  - npm install -g surge
-  - npm install
-script:
-  - npm run build
-deploy:
-  - surge ./build gavyncaldwell.com
