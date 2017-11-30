@@ -104,7 +104,7 @@ export default function HomePage() {
         <main className='o-section__main-content'>
           <h1 className='o-section__header'>No HTML/CSS frameworks</h1>
           <p className='c-about-me-copy'>
-            I write my own HTML and CSS (SCSS). I do this because it allows for customization
+            I write my own HTML and CSS (SCSS). I do this because it allows for better customization
             over using a framework like bootstrap. Not only that, front end frameworks like
             bootstrap are HUGE, which causes the load time of your website to go up drastically,
             and make it harder for your mobile users to enjoy your website.
