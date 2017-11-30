@@ -47,7 +47,7 @@ export default function HomePage() {
 
       <section className='o-section o-section--white'>
         <main className='o-section__main-content'>
-          <h1 className='o-section__header'>About Me</h1>
+          <h1 className='o-section__header'>About</h1>
           <p className='c-about-me-copy'>
             I am a Front End Web Developer with a passion for building excellent,
             beautiful, and responsive websites. I code amazing websites using ReactJS,
