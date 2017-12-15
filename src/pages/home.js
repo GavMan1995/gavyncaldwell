@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 
 import images from '../components/images'
 
-export default function HomePage() {
+export default function HomePage () {
   return (
     <div className='c-page'>
       <section className='o-section o-section--gradient o-section--center'>
@@ -12,7 +12,7 @@ export default function HomePage() {
         </div>
         <p className='c-about-me-title'>
           Husband, Siberian Husky Dad, Yo-Yoer and Front-end Web Developer
-            </p>
+        </p>
 
         {/* <a 
             className='c-btn-gradient' 
@@ -47,7 +47,7 @@ export default function HomePage() {
 
       <section className='o-section o-section--white'>
         <main className='o-section__main-content'>
-          <h1 className='o-section__header'>About ME</h1>
+          <h1 className='o-section__header'>About Me</h1>
           <p className='c-about-me-copy'>
             I am a Front End Web Developer with a passion for building excellent,
             beautiful, and responsive websites. I code amazing websites using ReactJS,

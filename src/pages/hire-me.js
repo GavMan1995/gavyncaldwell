@@ -4,7 +4,7 @@ export default class HireMePage extends Component {
   constructor() {
     super()
 
-    this.state = { siteUrl: 'https://gavyncaldwell.com' }
+    this.state = { siteUrl: 'http://gavyncaldwell.me' }
   }
   render() {
     return (
@@ -45,7 +45,7 @@ export default class HireMePage extends Component {
             </small>
             <form className='c-search-form' onSubmit={this.searchSite.bind(this)}>
               <input
-                defaultValue='https://'
+                defaultValue='http://'
                 type='text'
                 placeholder='Enter Your Website URL'
                 ref='siteSearch' />
