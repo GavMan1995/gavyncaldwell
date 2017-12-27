@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './styles.scss'
 // import Footer from './components/footer'
@@ -15,10 +15,11 @@ export default class App extends Component {
         <Router>
           <div className='o-page'>
             <Header />
-            <Route exact path='/' component={HomePage} />
-            <Route exact path='/hire' component={HireMePage} />
-            <Route exact path='/message-received' component={MessageReceived} />
-            {/* <Footer /> */}
+            <Switch>
+              <Route exact path='/' component={HomePage} />
+              <Route path='/hire' component={HireMePage} />
+              <Route path='/message-received' component={MessageReceived} />
+            </Switch>
           </div>
         </Router>
 
