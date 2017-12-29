@@ -9,7 +9,7 @@ import HireMePage from './pages/hire-me'
 import MessageReceived from './pages/message-received'
 
 export default class App extends Component {
-  render() {
+  render () {
     return (
       <div className='o-container'>
         <Router>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
 export default class HireMePage extends Component {
-  constructor() {
+  constructor () {
     super()
 
     this.state = { siteUrl: 'http://gavyncaldwell.me' }
   }
-  render() {
+  render () {
     return (
       <div className='c-page'>
         <section className='c-hero'>
@@ -56,7 +56,7 @@ export default class HireMePage extends Component {
           <aside className='o-section__aside-content o-section__aside-content--center'>
             <div className='c-phone-view'>
               <span className='c-phone-speaker' />
-              <iframe title='mobile-view' src={this.state.siteUrl}></iframe>
+              <iframe title='mobile-view' src={this.state.siteUrl} />
               <span className='c-phone-mic' />
             </div>
           </aside>
@@ -109,7 +109,7 @@ export default class HireMePage extends Component {
     )
   }
 
-  searchSite(event) {
+  searchSite (event) {
     event.preventDefault()
     let url = this.refs.siteSearch.value
     this.setState({ siteUrl: url })

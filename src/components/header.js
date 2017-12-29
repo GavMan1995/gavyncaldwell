@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
-  constructor() {
+  constructor () {
     super()
 
     this.state = {
@@ -10,7 +10,7 @@ export default class Header extends Component {
     }
   }
 
-  render() {
+  render () {
     return (
       <div className='c-header' >
         <Link className='c-header__logo' to='/'>
@@ -59,11 +59,11 @@ export default class Header extends Component {
     )
   }
 
-  openMenu() {
+  openMenu () {
     this.setState({ menuOpen: true })
   }
 
-  closeMenu() {
+  closeMenu () {
     this.setState({ menuOpen: false })
   }
 }
