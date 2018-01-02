@@ -115,6 +115,5 @@ export default class HireMePage extends Component {
     event.preventDefault()
     let url = this.refs.siteSearch.value
     this.setState({ siteUrl: url })
-    console.log(this.state)
   }
 }

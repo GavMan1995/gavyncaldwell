@@ -8,7 +8,6 @@ import images from '../components/images'
 class HomePage extends Component {
   render () {
     const { data } = this.props
-    console.log(data)
     if (!data.loading) {
       return (
         <div className='c-page'>
@@ -165,6 +164,7 @@ export const allPortfolios = gql`
       }
       description
       name
+      link
     }
   }
 `
