@@ -34,13 +34,13 @@ export default class Header extends Component {
 
           <div
             onClick={this.closeMenu.bind(this)}
-            style={window.location.pathname === '/' ? { display: 'none' } : {}}
+            style={window.location.hash === '#/' ? { display: 'none' } : {}}
             className='c-header-menu__link'>
             <Link to='/'>Home</Link>
           </div>
           <div
             onClick={this.closeMenu.bind(this)}
-            style={window.location.pathname === '/hire' ? { display: 'none' } : {}}
+            style={window.location.hash === '#/hire' ? { display: 'none' } : {}}
             className='c-header-menu__link'>
             <Link to='/hire'>Hire Me</Link>
           </div>
