@@ -48,7 +48,8 @@ class HomePage extends Component {
             <main className='o-section__main-content'>
               <h1 className='o-section__header'>About Me</h1>
               <p className='c-about-me-copy'>
-                I am a Front End Web Developer with a passion for building excellent,
+                I am a Front End Web Developer based in Salt Lake City, Utah.
+                I have a passion for building excellent,
                 beautiful, and responsive websites. I code amazing websites using ReactJS,
                 HTML, CSS and I am currently growing my NodeJS skills.
                 I love learning and am constantly taking new online courses with an emphasis
