@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import './styles.scss'
 // import Footer from './components/footer'
