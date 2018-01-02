@@ -14,7 +14,10 @@ export default class Header extends Component {
     return (
       <div className='c-header' >
         <Link className='c-header__logo' to='/'>
-          <img className='c-logo' alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525031/portfolio/GavynFullWhite_ezsood.svg' />
+          <img
+            className='c-logo'
+            alt='Responsive Web Developer in Utah'
+            src='https://res.cloudinary.com/gavmanweb/image/upload/v1492525031/portfolio/GavynFullWhite_ezsood.svg' />
         </Link>
 
         <div

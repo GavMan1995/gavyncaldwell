@@ -14,10 +14,10 @@ class HomePage extends Component {
         <div className='c-page'>
           <section className='o-section o-section--gradient o-section--center'>
             <div className='c-img-container c-img-container--about-me'>
-              <img alt='loading' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/portfolio/gavyn_caldwell_alt_riqaio.jpg' />
+              <img alt='Responsive Web Developer in Utah' src='https://res.cloudinary.com/gavmanweb/image/upload/v1491349329/portfolio/gavyn_caldwell_alt_riqaio.jpg' />
             </div>
             <p className='c-about-me-title'>
-              Husband, Siberian Husky Dad, Yo-Yoer and Front-end Web Developer
+              Husband, Siberian Husky Dad, Yo-Yoer and Front End Web Developer
             </p>
 
             <div className='c-about-me-links'>
@@ -80,7 +80,7 @@ class HomePage extends Component {
           <section className='o-section'>
             <aside className='o-section__aside-content o-section__aside-content--center o-section__aside-content--last-on-mobile'>
               <div className='c-img-container c-img-container--react'>
-                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512019872/portfolio/react_qcumv6.svg' alt='' />
+                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512019872/portfolio/react_qcumv6.svg' alt='Responsive Web Developer in Utah' />
               </div>
             </aside>
 
@@ -115,11 +115,11 @@ class HomePage extends Component {
 
             <aside className='o-section__aside-content o-section__aside-content--center'>
               <div className='c-img-container c-img-container--html-css'>
-                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512020333/portfolio/html_leenj1.png' alt='' />
+                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512020333/portfolio/html_leenj1.png' alt='Responsive Web Developer in Utah' />
               </div>
 
               <div className='c-img-container c-img-container--html-css'>
-                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512020337/portfolio/css_hydemc.png' alt='' />
+                <img src='https://res.cloudinary.com/gavmanweb/image/upload/v1512020337/portfolio/css_hydemc.png' alt='Responsive Web Developer in Utah' />
               </div>
             </aside>
           </section>
@@ -134,7 +134,7 @@ class HomePage extends Component {
                   target='_blank'
                   className='c-projects__project'>
                   <img
-                    alt='Nasgul'
+                    alt='Responsive Web Developer in Utah'
                     src={project.image.url} />
                   <div className='c-project__about'>
                     <h1>{project.name}</h1>
